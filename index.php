@@ -75,6 +75,7 @@ $discs = [
 
 ?>
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -104,22 +105,17 @@ $discs = [
 
     <main>
         <section id="grid">
-            <?php
-                foreach ($discs as $disc)
-            ?>
-
             <div class="card">
                 <figure class="poster">
-                    <img src="<?php echo $disc['poster']?>">
+                    <img src="">
                 </figure>
                 
                 <div class="info">
-                    <p class="title"><?php echo $disc['title']?></p>
-                    <p class="author"><?php echo $disc['author']?></p>
-                    <p class="year"><?php echo $disc['year']?></p>
+                    <p class="title"></p>
+                    <p class="author"></p>
+                    <p class="year"></p>
                 </div>
             </div>
-
         </section>
     </main>
 </body>
