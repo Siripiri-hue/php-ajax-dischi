@@ -105,17 +105,23 @@ $discs = [
 
     <main>
         <section id="grid">
-            <div class="card">
-                <figure class="poster">
-                    <img src="">
-                </figure>
-                
-                <div class="info">
-                    <p class="title"></p>
-                    <p class="author"></p>
-                    <p class="year"></p>
-                </div>
+          <?php
+            foreach($discs as $disc):
+          ?>
+          <div class="card">
+            <figure class="poster">
+              <img src="<?php echo $disc['poster'] ?>">
+            </figure>
+
+            <div class="info">
+              <p class="title"><?php echo $disc['title'] ?></p>
+              <p class="author"><?php echo $disc['author'] ?></p>
+              <p class="year"><?php echo $disc['year'] ?></p>
+              </div>
             </div>
+            <?php
+              endforeach;
+            ?>
         </section>
     </main>
 </body>
