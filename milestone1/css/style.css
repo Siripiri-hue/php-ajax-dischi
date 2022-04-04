@@ -32,7 +32,7 @@ main {
     align-items: center;
     color: white;
     padding-top: 20px;
-    overflow: hidden;
+    overflow: auto;
 }
 
 #grid {
