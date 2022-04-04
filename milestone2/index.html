@@ -29,15 +29,15 @@
 
   <main>
       <section id="grid">
-        <div class="card" v-for="">
+        <div class="card" v-for="disc in discs">
           <figure class="poster">
-            <img src="">
+            <img :src="disc.poster">
           </figure>
 
           <div class="info">
-            <p class="title"></p>
-            <p class="author"></p>
-            <p class="year"></p>
+            <p class="title">{{ disc.title }}</p>
+            <p class="author">{{ disc.author }}</p>
+            <p class="year">{{ disc.year }}</p>
             </div>
         </div>
       </section>

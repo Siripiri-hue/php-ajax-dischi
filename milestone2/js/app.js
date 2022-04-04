@@ -2,15 +2,15 @@ const app = new Vue ({
     el: "#grid",
 
     data: {
-        album : [],
+        discs : [],
     },
 
     methods: {
         getDiscs: function () {
           axios.get("http://localhost/php-ajax-dischi/milestone2/partials/vars.php") 
             .then( resp => {
-                this.album = resp.data;
-                console.log(this.album);
+                this.discs = resp.data;
+                console.log(this.discs);
             });
         },
     },
